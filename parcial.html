@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="parcial.css">
+  <script defer src="parcial.js"></script>
+  <title>Parcial</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="form" id="fDatos">
+      <h1 class="titulo">Form datos</h1>
+
+      <body id="cuerpo">
+        <div class="divFDatos">Filtrar por <select name="tipoPersonas" id="tipoPersonas">
+            <option selected="" value="todos">Todos</option>
+            <option value="heroes">Heroes</option>
+            <option value="villanos">Villanos</option>
+          </select></div>
+        <div class="divFDatos">Calcular edad promedio: <input type="text" readonly id="promedio"></input> <button
+            id="btnCalcular">Calcular</button> </div>
+        <div class="divFDatos">Mostrar columnas:</div>
+        <div class="divFDatos"><input type="checkbox" id="cId" checked>ID</input>
+          <input type="checkbox" id="cNombre" checked>Nombre</input>
+          <input type="checkbox" id="cApellido" checked>Apellido</input>
+          <input type="checkbox" id="cEdad" checked>Edad</input>
+          <input type="checkbox" id="cAlterego" checked>AlterEgo</input>
+          <input type="checkbox" id="cCiudad" checked>Ciudad</input>
+          <input type="checkbox" id="cPublicado" checked>Publicado</input>
+          <input type="checkbox" id="cEnemigo" checked>Enemigo</input>
+          <input type="checkbox" id="cRobos" checked>Robos</input>
+          <input type="checkbox" id="cAsesinatos" checked>Asesinatos</input>
+        </div>
+        <table id="tabla">
+          <thead id="thead">
+          <tr>
+            <td class="columnaId" name="encabezado"><button id="bId" class="botonTabla">Id</button></td>
+            <td class="columnaNombre" name="encabezado"><button id="bNombre" class="botonTabla">Nombre</button></td>
+            <td class="columnaApellido" name="encabezado"><button id="bApellido" class="botonTabla">Apellido</button></td>
+            <td class="columnaEdad" name="encabezado"><button id="bEdad" class="botonTabla">Edad</button></td>
+            <td class="columnaAlterego" name="encabezado"><button id="bAlterego" class="botonTabla">AlterEgo</button></td>
+            <td class="columnaCiudad" name="encabezado"><button id="bCiudad" class="botonTabla">Ciudad</button></td>
+            <td class="columnaPublicado" name="encabezado"><button id="bPublicado" class="botonTabla">Publicado</button></td>
+            <td class="columnaEnemigo" name="encabezado"><button id="bEnemigo" class="botonTabla">Enemigo</button></td>
+            <td class="columnaRobos" name="encabezado"><button id="bRobos" class="botonTabla">Robos</button></td>
+            <td class="columnaAsesinatos" name="encabezado"><button id="bAsesinatos" class="botonTabla">Asesinatos</button></td>
+          </tr>
+        </thead>
+        </table>
+        <button id="add">Agregar</button>
+    </div>
+
+
+
+
+    <div class="form" id="abm">
+      <h1 class="titulo">Formulario ABM</h1>
+
+      <div> <label>ID:</label> <input type="text"  id="fID" name="abmInput"  ></input></div>
+      <div><label>Nombre:</label><input type="text" id="fNombre" name="abmInput"  ></input></div>
+      <div><label>Apellido:</label><input type="text" id="fApellido" name="abmInput"  ></input></div>
+      <div><label>Edad</label> <input type="text" id="fEdad" name="abmInput"  ></input></div>
+      <div><label>Tipo:</label> <select id="fTipo" name="abmInput">
+          <option selected="" value="heroe">Heroe</option>
+          <option value="villano">Villano</option>
+        </select></div>
+      <div><label class="labelF">AlterEgo</label><input type="text" id="fAlterego" class="inputHeroe"
+          name="abmInput"  ></input></div>
+      <div><label class="labelF">Ciudad</label><input type="text" id="fCiudad" class="inputHeroe"
+          name="abmInput"  ></input></div>
+      <div><label class="labelF">Publicado</label> <input type="text" id="fPublicado" class="inputHeroe"
+          name="abmInput"  ></input></div>
+      <div><label class="labelP">Enemigo</label> <input type="text" id="fEnemigo" class="inputVillano"
+          name="abmInput"  ></input></div>
+      <div><label class="labelP">Robos</label><input type="text" id="fRobos" class="inputVillano"
+          name="abmInput"  ></input></div>
+      <div><label class="labelP">Asesinatos</label> <input type="text"   id="fAsesinatos" class="inputVillano"
+          name="abmInput" ></input></div>
+
+
+      <button class="bAbm" id="alta">Alta</button>
+      <button class="bAbm" id="modificacion">Modificar</button>
+      <button class="bAbm" id="baja">Eliminar</button>
+      <button class="bAbm" id="cancelar">Cancelar</button>
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
