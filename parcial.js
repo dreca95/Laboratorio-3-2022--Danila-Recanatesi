@@ -350,6 +350,7 @@ function Calcular() {
 
 function MostrarFormVacio() {
   MostrarForm();
+  document.getElementById("fTipo").disabled = false;
 
   document.getElementById("fID").value = "";
   document.getElementById("fNombre").value = "";
@@ -459,7 +460,7 @@ function RecuperarInfo(e) {
   document.getElementById("fNombre").value = persona.Nombre;
   document.getElementById("fApellido").value = persona.Apellido;
   document.getElementById("fEdad").value = persona.Edad;
-
+  
   if (persona instanceof Heroe) {
     document.getElementById("fTipo").value = "heroe";
 
@@ -479,6 +480,9 @@ function RecuperarInfo(e) {
   let buttonMod = document.getElementById("modificacion");
   let buttonBaja = document.getElementById("baja");
   let buttonAlta = document.getElementById("alta");
+
+  document.getElementById("fTipo").disabled = true;;
+
   buttonMod.disabled = false;
   buttonBaja.disabled = false;
   buttonAlta.disabled = true;
