@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="parcial.css">
+  <script defer src="parcial.js"></script>
+  <title>Parcial</title>
+</head>
+
+<body>
+
+<!--   a- Formulario Lista: Un formulario que contenga una lista de todos los elementos recuperados en objetos de las clases implementadas en
+el punto uno. Cada Fila debe Tener una columna para cada Atributo de todas las clases implementadas en el punto 1, en caso de
+que el atributo no aplique al elemento presentado en esa fila rellenar con N/A.
+Cada fila debe tener además 2 columnas adicionales con un botón cada una, el primero con el texto &quot;Modificar&quot; el segundo con el texto
+&quot;Eliminar&quot;
+Luego de la Tabla con los Elementos debe haber 1 botón con texto &quot;Agregar Elemento&quot;.
+
+b- Formulario ABM: Un formulario que tenga campos para todos los atributos de las clases implementadas en el punto 1, mostrando los
+que correspondan según la acción a realizar. Un Encabezado de texto que diga &quot;Alta&quot;, &quot;Baja&quot;, &quot;Modificación&quot;, según corresponda y
+2 botones con textos &quot;Aceptar&quot; y &quot;Cancelar&quot;.
+c- Spinner: Un contenedor transparente de Pantalla completa con un &quot;Spinner&quot;. -->
+
+  <div class="container">
+
+    <div class="form" id="fLista">
+      <h1 class="titulo">Formulario lista</h1>
+
+      <body id="cuerpo">
+
+        <table id="tabla">
+          <thead id="thead">
+            <tr>
+              <td class="columnaId" name="encabezado">
+                <div id="bId" class="encabezadoTabla">Id</div>
+              </td>
+              <td class="columnaModelo" name="encabezado">
+                <div id="bModelo" class="encabezadoTabla">Modelo</div>
+              </td>
+              <td class="columnaAnoFab" name="encabezado">
+                <div id="bAnoFab" class="encabezadoTabla">Anio Fabricacion</div>
+              </td>
+              <td class="columnaVelMax" name="encabezado">
+                <div id="bVelMax" class="encabezadoTabla">Velocidad Maxima</div>
+              </td>
+              <td class="columnaAltMax" name="encabezado">
+                <div id="bAltMax" class="encabezadoTabla">Altura Maxima</div>
+              </td>
+              <td class="columnaAutonomia" name="encabezado">
+                <div id="bAutonomia" class="encabezadoTabla">Autonomia</div>
+              </td>
+              <td class="columnaCantPue" name="encabezado">
+                <div id="bCantPue" class="encabezadoTabla">Cantidad de Puertas</div>
+              </td>
+              <td class="columnaCantRue" name="encabezado">
+                <div id="bCantRuedas" class="encabezadoTabla">Cantidad de Ruedas</div>
+              </td>
+              <td class="columnaModificar" name="encabezado">
+                <div id="bModificar" class="encabezadoTabla">Modificar</div>
+              </td>
+              <td class="columnaEliminar" name="encabezado">
+                <div id="bEliminar" class="encabezadoTabla">Eliminar</div>
+              </td>
+            </tr>
+          </thead>
+        </table>
+
+        <button id="add">Agregar Elemento</button>
+    </div>
+
+
+
+
+    <div class="form" id="abm">
+      <div id="title"></div>
+      <div> <label>ID:</label> <input type="text" id="fID" name="abmInput"></input></div>
+      <div><label>Modelo:</label><input type="text" id="fModelo" name="abmInput"></input></div>
+      <div><label>Anio Fabricacion:</label><input type="text" id="fAnoFab" name="abmInput"></input></div>
+      <div><label>Velocidad Maxima</label> <input type="text" id="fVelMax" name="abmInput"></input></div>
+      <div><label>Tipo:</label> <select id="fTipo" name="abmInput">
+          <option selected="" value="aereo">Aereo</option>
+          <option value="terrestre">Terrestre</option>
+        </select></div>
+      <div><label class="labelF">Altura Maxima</label><input type="text" id="fAltMax" class="inputAereo"
+          name="abmInput"></input></div>
+      <div><label class="labelF">Autonomia</label><input type="text" id="fAutonomia" class="inputAereo"
+          name="abmInput"></input></div>
+      <div><label class="labelP">Cantidad de Puertas</label> <input type="text" id="fCantPue" class="inputTerrestre"
+          name="abmInput"></input></div>
+      <div><label class="labelP">Cantidad de Ruedas</label><input type="text" id="fCantRue" class="inputTerrestre"
+          name="abmInput"></input></div>
+ 
+
+
+
+      <div><button class="bAbm" id="alta">Aceptar</button>
+      <button class="bAbm" id="modificar">Modificar</button>
+      <button class="bAbm" id="baja">Eliminar</button>
+      <button class="bAbm" id="cancelar">Cancelar</button></div>
+    </div>
+
+
+    <div id="spinner">
+
+      <div>
+        <h3>Cargando...</h3>
+      </div>
+      <img src="load.gif" />
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
